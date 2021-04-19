@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  kubectl-cli-paas:
+    container_name: cli
+    env_file:
+      - .env
+    build: .
