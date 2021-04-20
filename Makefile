@@ -1,4 +1,7 @@
-initial:
+initial-aws:
 	aws eks --region ${REGION_AWS} update-kubeconfig --name ${NAME_PROJECT_AWS}
 
-.PHONY: initial
+initial-digital-ocean:
+	doctl auth init --context ${CTX_DIGITAL_OCEAN}
+
+.PHONY: initial-aws

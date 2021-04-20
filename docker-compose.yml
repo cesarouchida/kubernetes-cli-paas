@@ -6,3 +6,6 @@ services:
     env_file:
       - .env
     build: .
+    volumes:
+    - "./.aws/:${VOLUME_CREDENTIALS_AWS}"
+    - "./.config/:${VOLUME_CREDENTIALS_DIGITALOCEAN}"
