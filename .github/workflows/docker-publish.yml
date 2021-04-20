@@ -56,7 +56,7 @@ jobs:
 
       - name: Push image
         run: |
-#          IMAGE_ID=docker.pkg.github.com/${{ github.repository }}/$IMAGE_NAME
+          # IMAGE_ID=docker.pkg.github.com/${{ github.repository }}/$IMAGE_NAME
           IMAGE_ID=${{ secrets.DOCKER_USER }}/$IMAGE_NAME
 
           # Change all uppercase to lowercase
