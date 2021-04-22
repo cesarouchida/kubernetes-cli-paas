@@ -43,4 +43,4 @@ RUN curl -LO https://github.com/digitalocean/doctl/releases/download/v${DOCTL_VE
 RUN tar -zxvf doctl-1.59.0-linux-amd64.tar.gz
 RUN mv doctl /usr/local/bin
 
-ENTRYPOINT ["bin/sh", "-c" , "watch kubectl get all"]
+ENTRYPOINT ["bin/sh", "-c" , "kubectl get all --watch"]
